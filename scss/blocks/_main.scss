@@ -1,0 +1,13 @@
+.main{
+   margin-bottom: 30px;
+   position:relative;
+   z-index:2;
+   top:-285px;
+   @include tabletXS {
+     top:-230px;       
+   }
+}
+.main__wrapper {
+   border-radius: 10px;
+   overflow: hidden;
+}

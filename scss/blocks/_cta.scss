@@ -1,0 +1,51 @@
+.cta {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    background-color: #e2e4e3;
+    background-image: url(.././img/cta/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mediaBg() {
+        background-image: url('.././img/cta/background@2x.jpg');
+
+    }
+}
+
+.cta__wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .btn{
+        @include mobileS {
+            padding: 8px 38px 8px 20px;
+            font-size: 13px;      
+        }
+    }
+}
+
+
+
+.cta__title {
+    max-width: 775px;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+    @include tablet {
+        font-size: 35px;
+    }
+    @include tabletXS {
+        font-size: 30px;       
+    }
+    @include mobileS {
+        font-size: 25px;      
+    }
+}
+

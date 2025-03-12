@@ -1,0 +1,153 @@
+.main-article {
+    grid-column: span 9;
+    width: calc(100% + 30px);
+    display: flex;
+    flex-direction: column;
+
+    padding: 55px;
+    padding-bottom: 95px;
+
+    background-color: #e2e4e3;
+    background-image: url(.././img/main-article/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @include mediaBg() {
+        background-image: url('.././img/main-article/background@2x.jpg');
+    }
+
+    @include tablet {
+        width: 100%;
+        grid-column: span 12;
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+    @media(max-width:375px){
+        margin-bottom: 30px;
+    }
+
+}
+
+.main-article__autor {
+    margin-bottom: 145px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    @include tabletXS {
+        margin-bottom: 100px;
+    }
+
+ 
+
+}
+
+.main-article__author-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main-article__author-name {
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: #c8c8c8;
+    }
+}
+
+.main-article__author-role {
+    font-size: 12px;
+    line-height: 125%;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.main-article__category {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 125%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4592ff;
+    @include mobileS {
+        font-size: 11px;     
+    }
+}
+
+.main-article__title {
+
+    max-width: 598px;
+    margin-bottom: 40px;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #fff;
+
+    @include mobileXS {
+        font-size: 35px;
+    }
+    @include mobileS {
+        font-size: 28px;      
+    }
+}
+
+.main-article__btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include mobileXS {
+       flex-wrap:wrap;      
+    }
+}
+
+.main-article__btn{
+    @include mobileS {
+        padding: 8px 38px 8px 20px;
+        font-size: 13px;
+          
+    }
+}
+.main-article__play {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in;
+   @include mobileS {
+      svg {
+        width:40px;
+        height:40px;
+      }      
+   }
+}
+
+.main-article__play:hover svg #Border {
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
+}
+
+.main-article__play-link {
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+
+
+    span {
+        font-size: 12px;
+        line-height: 125%;
+        color: #fff;
+        opacity: 0.4;
+    }
+    @include mobileS {
+        font-size: 13px;      
+    }
+}

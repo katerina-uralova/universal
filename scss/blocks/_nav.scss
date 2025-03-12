@@ -1,0 +1,30 @@
+.nav{
+   
+    background-color:#262D33;
+    @include tablet {
+      display:none;       
+    }
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav__link {
+    display:inline-block;
+    padding:17px 0;
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    transition:all 0.1s ease-in;
+    &:hover{
+        color: #bfbfbf;
+    }
+
+}

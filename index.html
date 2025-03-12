@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and SEO -->
+    <title>Universal</title>
+    <meta name="description" content="Dive into our articles to explore captivating stories, reviews, news" />
+    <meta name="keywords" content="latest intertainment articles" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Header-top -->
+            <div class="header__top">
+                <div class="header__top-left">
+                    <div class="header__menu-sections">
+                        <button id="mobile-nav-btn" class="header__menu-btn">
+                            <img src="./img/header-top/menu.svg" alt="Hamburger menu">
+                            Sections
+                        </button>
+                        <!-- Mobile-nav -->
+                        <div class="mobile-nav">
+                            <button id="close-mobile-nav">
+                                <img src="./img/header-top/close.svg" alt="close">
+                            </button>
+                            <ul class="mobile-nav__list">
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">News</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Opinion</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Science</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Life</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Travel</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Moneys</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Art & Design</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Sports</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">People</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Health</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="mobile-nav__link">Education</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-nav-fade"></div>
+                        <!-- Mobile-nav // -->
+                    </div>
+                    <div class="header__search">
+                        <a href="#!"><img src="./img/header-top/search.svg" alt="Search">
+                        </a>
+                        <input type="search" placeholder="Search">
+                    </div>
+                </div>
+
+                <div class="header__top-right">
+                    <div class="header__subscribe">
+                        <a href="#!" class="header__subscride-link">
+                            <img src="./img/header-top/subscribe.jpg" srcset="./img/header-top/subscribe@2x.jpg 2x"
+                                alt="Subscribe">
+                            <div class="header__subscribe-text" id="openSubscribe">Subscribe Now<br>
+                                <span>3 month for $19</span>
+                            </div>
+                        </a>
+                        <!-- Modal Subscribe -->
+                        <div class="modal" id="subscribeModal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="subscribeModal">&times;</span>
+                                <h2>Subscribe</h2>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Enter email" required>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- //Modal Subscribe -->
+                    </div>
+                    <div class="header__signin">
+                        <a href="#!" class="header__signin-link">
+                            <img src="./img/header-top/user.svg" alt="User">
+                            <div class="header__signin-text" id="openSignIn">Sign In</div>
+                        </a>
+
+                        <!-- Modal Sign In -->
+                        <div class="modal" id="signInModal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="signInModal">&times;</span>
+                                <h2>Sign In</h2>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" placeholder="Enter password" required>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Sign In</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- // Modal Sign In -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Header-row -->
+            <div class="header__row">
+
+                <div class="header__slogan">
+                    <img src="./img/header-row/slogan.jpg" srcset="./img/header-row/slogan@2x.jpg 2x"
+                        alt="Statue of Liberty">
+                    <a href="#!" class="header__slogan-text">
+                        Boston and New York Bear Brunt
+                    </a>
+                </div>
+
+                <div class="header__logo">
+                    <a href="#!" class="logo"><img src="./img/header-row/logo/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="header__date-right">
+                    <div class="header__date date" id="date">
+                        Monday, January 1, 2024
+                    </div>
+
+                    <div class="header__weather weather">
+                        <img src="./img/header-row/sun.svg" alt="Sun" class="weather__icon">
+                        <span class="weather__temperature">- 23 °C</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Nav -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#!" class="nav__link">News</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Opinion</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Science</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Life</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Travel</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Moneys</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Art & Design</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Sports</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">People</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Health</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav__link">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Top-articles -->
+    <section class="top-articles">
+        <div class="container">
+            <div class="top-articles__row" aria-label="Top articles">
+                <a href="#!" class="top-articles__col">
+                    <h2 class="top-articles__title">25 Songs That Tell Us Where Music Is Going</h2>
+                    <img src="./img/top-articles/01.jpg" srcset="./img/top-articles/01@2x.jpg 2x" alt="Guitar">
+                </a>
+                <a href="#!" class="top-articles__col">
+                    <h2 class="top-articles__title">These Ancient Assassins Eat Their Own Kind</h2>
+                    <img src="./img/top-articles/02.jpg" srcset="./img/top-articles/02@2x.jpg 2x" alt="Butterfly">
+                </a>
+                <a href="#!" class="top-articles__col">
+                    <h2 class="top-articles__title">How Do You Teach People to Love Difficult Music?</h2>
+                    <img src="./img/top-articles/03.jpg" srcset="./img/top-articles/03@2x.jpg 2x" alt="Man">
+                </a>
+                <a href="#!" class="top-articles__col">
+                    <h2 class="top-articles__title">International Soccer’s Man of Mystery</h2>
+                    <img src="./img/top-articles/04.jpg" srcset="./img/top-articles/04@2x.jpg 2x" alt="Socker">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="grid">
+
+                    <!-- Main article -->
+                    <article class="main-article">
+                        <div class="main-article__autor">
+                            <a href="#!"><img class="main-article__author-icon" src="./img/main-article/author.png"
+                                    alt="Author icon"></a>
+                            <a href="#!" class="main-article__author-info">
+                                <p class="main-article__author-name">By Benjamin Turner </p>
+                                <p class="main-article__author-role">Traveler</p>
+                            </a>
+                        </div>
+                        <a href="#!" class="main-article__category">Destinations</a>
+                        <h1 class="main-article__title">
+                            In Southeast England, White Cliffs and Fish
+                        </h1>
+                        <div class="main-article__btns">
+                            <div class="main-article__read">
+                                <a href="#!" class="main-article__btn btn">Read more
+                                </a>
+                            </div>
+                            <div class="main-article__play">
+                                <a href="#!"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Icon/Play">
+                                            <path id="Border" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25 49.9995C11.1929 49.9995 0 38.8066 0 24.9995C0 11.1924 11.1929 -0.000488281 25 -0.000488281C38.8071 -0.000488281 50 11.1924 50 24.9995C50 38.8066 38.8071 49.9995 25 49.9995ZM25 47.4995C37.4264 47.4995 47.5 37.4259 47.5 24.9995C47.5 12.5731 37.4264 2.49951 25 2.49951C12.5736 2.49951 2.5 12.5731 2.5 24.9995C2.5 37.4259 12.5736 47.4995 25 47.4995Z"
+                                                fill="white" />
+                                            <g id="Icon/Arrow">
+                                                <path id="Arrow" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.4999 30.9231V19.0759C20.4999 18.6195 20.8829 18.2495 21.3554 18.2495C21.5194 18.2495 21.68 18.2951 21.818 18.3808L31.357 24.3043C31.7544 24.5511 31.8695 25.0624 31.614 25.4463C31.5477 25.5459 31.4601 25.6306 31.357 25.6946L21.818 31.6182C21.4206 31.865 20.8913 31.7538 20.6358 31.3699C20.5471 31.2366 20.4999 31.0815 20.4999 30.9231Z"
+                                                    fill="white" />
+                                            </g>
+                                        </g>
+                                    </svg></a>
+                                <a href="#!" class="main-article__play-link">
+                                    The chalk cliff of Beachy Head <br> <span>18:05</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Aside -->
+                    <aside class="main-aside">
+                        <h3 class="main-aside__title">Recommended for you</h3>
+                        <ul class="main-aside__list">
+                            <li class="main-aside__item">
+                                <a href="#!" class="main-aside__link-title">Food</a>
+                                <a href="#!" class="main-aside__link">
+                                    For Chicken-Fried Steak, Too Much Is Just Enough
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10 19.9995C4.47715 19.9995 0 15.5224 0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281C15.5228 -0.000488281 20 4.47666 20 9.99951C20 15.5224 15.5228 19.9995 10 19.9995ZM10 18.9995C14.9706 18.9995 19 14.9701 19 9.99951C19 5.02895 14.9706 0.999512 10 0.999512C5.02944 0.999512 1 5.02895 1 9.99951C1 14.9701 5.02944 18.9995 10 18.9995Z"
+                                            fill="#BCBFC2" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.2 12.3687V7.62986C8.2 7.44731 8.3532 7.29932 8.54218 7.29932C8.60779 7.29932 8.67202 7.31754 8.72722 7.35181L12.5428 9.72125C12.7018 9.81997 12.7478 10.0245 12.6456 10.178C12.6191 10.2179 12.584 10.2517 12.5428 10.2773L8.72722 12.6468C8.56825 12.7455 8.35654 12.701 8.25434 12.5475C8.21886 12.4942 8.2 12.4321 8.2 12.3687Z"
+                                            fill="#262D33" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-aside__item">
+                                <a href="#!" class="main-aside__link-title main-aside__link-title--gray">Cars</a>
+                                <a href="#!" class="main-aside__link">Storm Has Car Dealers Doing Swift Business</a>
+                            </li>
+                            <li class="main-aside__item">
+                                <a href="#!" class="main-aside__link-title main-aside__link-title--purple">Movies</a>
+                                <a href="#!" class="main-aside__link">War Is Hell? In New Military Dramas, It’s
+                                    One-Dimensional</a>
+                            </li>
+                            <li class="main-aside__item">
+                                <a href="#!" class="main-aside__link-title main-aside__link-title--orange">NFL</a>
+                                <a href="#!" class="main-aside__link">11 surprising stat rankings for active NFL players
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10 19.9995C4.47715 19.9995 0 15.5224 0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281C15.5228 -0.000488281 20 4.47666 20 9.99951C20 15.5224 15.5228 19.9995 10 19.9995ZM10 18.9995C14.9706 18.9995 19 14.9701 19 9.99951C19 5.02895 14.9706 0.999512 10 0.999512C5.02944 0.999512 1 5.02895 1 9.99951C1 14.9701 5.02944 18.9995 10 18.9995Z"
+                                            fill="#BCBFC2" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.2 12.3687V7.62986C8.2 7.44731 8.3532 7.29932 8.54218 7.29932C8.60779 7.29932 8.67202 7.31754 8.72722 7.35181L12.5428 9.72125C12.7018 9.81997 12.7478 10.0245 12.6456 10.178C12.6191 10.2179 12.584 10.2517 12.5428 10.2773L8.72722 12.6468C8.56825 12.7455 8.35654 12.701 8.25434 12.5475C8.21886 12.4942 8.2 12.4321 8.2 12.3687Z"
+                                            fill="#262D33" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-aside__item">
+                                <a href="#!" class="main-aside__link-title main-aside__link-title--green">Tech
+                                    Reviews</a>
+                                <a href="#!" class="main-aside__link">The bookcases you can buy online and assemble
+                                    yourself</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- News -->
+    <section class="news">
+        <div class="container">
+            <div class="news__wrapper">
+                <div class="grid">
+
+                    <!-- News__1 -->
+                    <div class="news__1">
+                        <div class="news__1-wrapper">
+                            <div class="news__1-info">
+                                <a href="#!">
+                                    <h4 class="news__1-subtitle">
+                                        Cars
+                                    </h4>
+                                </a>
+                                <a href="#!">
+                                    <h3 class="news__1-title">
+                                        The joy of replicas: A $ 5 million car for $ 50,000
+                                    </h3>
+                                </a>
+                                <p class="news__1-text">
+                                    The 31-year-old self-taught engineer and former amateur racer spends his days
+                                    building
+                                    artful recreations of one of most iconic sports cars
+                                </p>
+                            </div>
+                            <img src="./img/news/car.jpg" srcset="./img/news/car@2x.jpg 2x" alt="car">
+                        </div>
+                        <div class="news__1-reviews">
+                            <a href="#!" class="news__1-avatar">
+                                <img src="./img/news/avatar.jpg" srcset="./img/news/avatar@2x.jpg 2x" alt="avatar">
+                            </a>
+                            <a href="#!" class="news__1-name">Jessica Miller:</a>
+                            <a href="#!" class="news__1-review">Even as the ride-hailing service’s future remem as
+                                the</a>
+                            <img src="./img/icons/comment.svg" alt="comment">
+                            <a href="#!" class="news__1-count">342</a>
+                        </div>
+                    </div>
+
+                    <!-- News__02 -->
+                    <div class="news__2">
+                        <div class="news__2-wrapper">
+                            <a href="#!" class="news__2-btn btn-popular">Popular</a>
+                            <div class="news__2-popular-wrapper">
+                                <a href="#!">
+                                    <h4 class="news__2-subtitle">
+                                        Art & Design
+                                    </h4>
+                                </a>
+                                <a href="#!">
+                                    <h3 class="news__2-title">
+                                        Invisible ink: the weird world of tattoo removal – in pictures
+                                    </h3>
+                                </a>
+
+                                <div class="news__2-author">
+                                    <a href="#!" class="news__2-avatar">
+                                        <img src="./img/news/avatar-popular.jpg"
+                                            srcset="./img/news/avatar-popular@2x.jpg 2x" alt="avatar">
+                                    </a>
+                                    <div class="news__2-info">
+                                        <a href="#!" class="news__2-name">By Sarah Jenkins</a>
+                                        <div class="news__2-desc">
+                                            <div href="#!" class="news__2-date">
+                                                Sept 26</div>
+                                            <a href="#!" class="news__2-cooments">
+                                                <img src="./img/icons/comment-popular.svg" alt="comment">
+                                                16</a>
+                                            <a href="#!" class="news__2-likes">
+                                                <img src="./img/icons/heart.svg" alt="heart">
+                                                832</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <aside class="news__aside">
+                        <div class="news__aside-columns">
+                            Columns
+                        </div>
+                        <div class="news__aside-cols">
+                            <div class="news__aside-col-wrapper">
+
+                                <a href="#!" class="news__aside-1">
+                                    <h4 class="news__aside-title"> Architecture is the thoughtful making of space</h4>
+                                </a>
+                                <div class="news__aside-author">
+                                    <a href="#!" class="news__aside-avatar">
+                                        <img src="./img/news/aside/avatar-01.jpg"
+                                            srcset="./img/news/aside/avatar-01@2x.jpg 2x" alt="avatar">
+                                    </a>
+                                    <div class="news__aside-author-info">
+                                        <a href="#!" class="news__aside-name">David Williams</a>
+                                        <div class="news__aside-role">Architect</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__aside-col-wrapper">
+
+                                <a href="#!" class="news__aside-1">
+                                    <h4 class="news__aside-title"> The details are not the details. They make the
+                                        design.
+                                    </h4>
+                                </a>
+                                <div class="news__aside-author">
+                                    <a href="#!" class="news__aside-avatar">
+                                        <img src="./img/news/aside/avatar-02.jpg"
+                                            srcset="./img/news/aside/avatar-02@2x.jpg 2x" alt="avatar">
+                                    </a>
+                                    <div class="news__aside-author-info">
+                                        <a href="#!" class="news__aside-name">Alexandra Green</a>
+                                        <div class="news__aside-role">Interior designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__aside-col-wrapper">
+
+                                <a href="#!" class="news__aside-1">
+                                    <h4 class="news__aside-title">Live life to the fullest, and focus on the positive
+                                    </h4>
+                                </a>
+                                <div class="news__aside-author">
+                                    <a href="#!" class="news__aside-avatar">
+                                        <img src="./img/news/aside/avatar-03.jpg"
+                                            srcset="./img/news/aside/avatar-03@2x.jpg 2x" alt="avatar">
+                                    </a>
+                                    <div class="news__aside-author-info">
+                                        <a href="#!" class="news__aside-name">Olivia Thompson</a>
+                                        <div class="news__aside-role">Coacher</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__aside-readmore">
+                            <a href="#!">Read more</a>
+                        </div>
+                    </aside>
+
+                    <!-- News__03 -->
+                    <div class="news__3">
+                        <div class="news__3-img">
+                            <img src="./img/news/news-03.jpg" srcset="./img/news/news-03@2x.jpg 2x" alt="Cat">
+                        </div>
+                        <a class="news__3-link" href="#!">
+                            <h4 class="news__3-title">
+                                200+ Doomed Cats Saved From Euthanization
+                            </h4>
+                        </a>
+                        </a>
+                    </div>
+
+                    <!-- News__04 -->
+                    <div class="news__4">
+                        <a href="#!" class="news__4-link">
+                            <h4 class="news__4-title">
+                                Is Coffee Bad for Bones?
+                            </h4>
+                        </a>
+                        <p class="news__4-desc">
+                            Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones
+                        </p>
+                        <div class="news__4-date">
+                            Oct 15
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- News__05 -->
+                    <div class="news__5">
+                        <a href="#!" class="news__5-link">
+                            <h4 class="news__5-title">
+                                What We Manufacture
+                            </h4>
+                        </a>
+                        <p class="news__5-desc">
+                            A global history of the factory and the modern world that all should read
+                        </p>
+                        <div class="news__5-date">
+                            Oct 14
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- News__06 -->
+                    <div class="news__6">
+                        <a href="#!" class="news__6-link">
+                            <h4 class="news__6-title">
+                                It’s a Stressful World
+                            </h4>
+                        </a>
+                        <p class="news__6-desc">
+                            Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?
+                        </p>
+                        <div class="news__6-date">
+                            Oct 15
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- News__07 -->
+                    <div class="news__7">
+                        <a href="#!" class="news__7-link">
+                            <h4 class="news__7-title">
+                                A Treat for Lemon Lovers
+                            </h4>
+                        </a>
+                        <p class="news__7-desc">
+                            This tangerine, ginger and chocolate tart has verve, depth and a hint of spice
+                        </p>
+                        <div class="news__7-date">
+                            Oct 13
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__wrapper">
+                <a href="#!">
+                    <h3 class="cta__title">
+                        The Big Bloom or «How Flowering
+                        Plants Changed the World»
+                    </h3>
+                </a>
+                <a href="#" class="btn">
+                    Read more
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles">
+        <div class="container">
+            <div class="grid articles__grid">
+                <div class="articles__list">
+
+                    <!-- Article item 01  -->
+                    <article class="articles__item">
+                        <a class="articles__bookmark"></a>
+                        <a href="#!" class="articles__img">
+                            <img src="./img/articles/01.jpg" srcset="./img/articles/01@2x.jpg 2x" alt="Hands">
+                        </a>
+                        <div class="articles__info">
+                            <a href="#!" class="articles__catergory articles__catergory--blue">Flights</a>
+                            <a href="#!">
+                                <h3 class="articles__title">Passengers Suffer as Crowded Field Puts Pressure on Europe’s
+                                    Airlines</h3>
+                            </a>
+                            <p class="articles__text">Weaker carriers have fallen by the wayside amid fierce
+                                competition, while others have been hit by bad luck. The result: thousands of canceled
+                                flights.
+                            </p>
+                            <div class="articles__meta">
+                                <div class="articles__date">Aug 6</div>
+                                <a href="#!" class="articles__comments">
+                                    <img src="./img/articles/icons/comment.svg" alt="comments">342
+                                </a>
+                                <a href="#!" class="articles__likes">
+                                    <img src="./img/articles/icons/heart.svg" alt="heart">830
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article item 02  -->
+                    <article class="articles__item">
+                        <a class="articles__bookmark"></a>
+                        <a href="#!" class="articles__img">
+                            <img src="./img/articles/02.jpg" srcset="./img/articles/02@2x.jpg 2x" alt="Hands">
+                        </a>
+                        <div class="articles__info">
+                            <a href="#!" class="articles__catergory articles__catergory--turquoise">Food</a>
+                            <a href="#!">
+                                <h3 class="articles__title">Three Courses, 20 Euros: The Affordable Dining Renaissance
+                                    in Paris</h3>
+                            </a>
+                            <p class="articles__text">The Los Angeles area, for all of its culinary diversity, has not
+                                historically been thought of as a haven for bread lovers. The area has a reputation as a
+                                place where gluten fears to tread.
+                            </p>
+                            <div class="articles__meta">
+                                <div class="articles__date">Oct 7</div>
+                                <a href="#!" class="articles__comments">
+                                    <img src="./img/articles/icons/comment.svg" alt="comments">27
+                                </a>
+                                <a href="#!" class="articles__likes">
+                                    <img src="./img/articles/icons/heart.svg" alt="heart">129
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article item 03  -->
+                    <article class="articles__item">
+                        <a class="articles__bookmark"></a>
+                        <a href="#!" class="articles__img">
+                            <img src="./img/articles/03.jpg" srcset="./img/articles/03@2x.jpg 2x" alt="Hands">
+                        </a>
+                        <div class="articles__info">
+                            <a href="#!" class="articles__catergory articles__catergory--red ">Science</a>
+                            <a href="#!">
+                                <h3 class="articles__title">Watch the High-Flying Physics of a Plant’s Exploding Fruits
+                                </h3>
+                            </a>
+                            <p class="articles__text">Three undergradute physics majors and their professor worked
+                                out how the hairyflower wild petunia shoots tiny seeds more than 20 feet through the
+                                air.
+                            </p>
+                            <div class="articles__meta">
+                                <div class="articles__date">Oct 11</div>
+                                <a href="#!" class="articles__comments">
+                                    <img src="./img/articles/icons/comment.svg" alt="comments">30
+                                </a>
+                                <a href="#!" class="articles__likes">
+                                    <img src="./img/articles/icons/heart.svg" alt="heart">284
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article item 04  -->
+                    <article class="articles__item">
+                        <a class="articles__bookmark"></a>
+                        <a href="#!" class="articles__img">
+                            <img src="./img/articles/04.jpg" srcset="./img/articles/04@2x.jpg 2x" alt="Hands">
+                        </a>
+                        <div class="articles__info">
+                            <a href="#!" class="articles__catergory articles__catergory--turquoise">Health</a>
+                            <a href="#!">
+                                <h3 class="articles__title">How the Shape of Your Ears Affects What You Hear</h3>
+                            </a>
+                            <p class="articles__text">We’re able to locate sound because our brains grasp the shape
+                                of our ears. When that shape changes, we need time and practice to adapt. Ears are a
+                                peculiarly individual piece of anatomy.
+                            </p>
+                            <div class="articles__meta">
+                                <div class="articles__date">Oct 19</div>
+                                <a href="#!" class="articles__comments">
+                                    <img src="./img/articles/icons/comment.svg" alt="comments">102
+                                </a>
+                                <a href="#!" class="articles__likes">
+                                    <img src="./img/articles/icons/heart.svg" alt="heart">1,293
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article item 05  -->
+                    <article class="articles__item">
+                        <a class="articles__bookmark"></a>
+                        <a href="#!" class="articles__img">
+                            <img src="./img/articles/05.jpg" srcset="./img/articles/05@2x.jpg 2x" alt="Hands">
+                        </a>
+                        <div class="articles__info">
+                            <a href="#!" class="articles__catergory articles__catergory--red">Science</a>
+                            <a href="#!">
+                                <h3 class="articles__title">Forests Protect the Climate. A Future With More Storms Would
+                                    Mean Trouble.</h3>
+                            </a>
+                            <p class="articles__text">With an increase in extreme weather expected in the years to come,
+                                forests could be changed permanently as the world continues to warm.
+                            </p>
+                            <div class="articles__meta">
+                                <div class="articles__date">Oct 22</div>
+                                <a href="#!" class="articles__comments">
+                                    <img src="./img/articles/icons/comment.svg" alt="comments">5
+                                </a>
+                                <a href="#!" class="articles__likes">
+                                    <img src="./img/articles/icons/heart.svg" alt="heart">82
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article item 06  -->
+                    <article class="articles__item">
+                        <a class="articles__bookmark"></a>
+                        <a href="#!" class="articles__img">
+                            <img src="./img/articles/06.jpg" srcset="./img/articles/06@2x.jpg 2x" alt="Hands">
+                        </a>
+                        <div class="articles__info">
+                            <a href="#!" class="articles__catergory articles__catergory--purple">Art & Design</a>
+                            <a href="#!">
+                                <h3 class="articles__title">New Contemporary Institute Reverberates in Richmond’s
+                                    Historic Landscape</h3>
+                            </a>
+                            <p class="articles__text">The center, which will open in April, takes a bold look at race
+                                and other social issues that still resonate in the region as well as the nation. A new
+                                Institute for Contemporary Art is set to open.
+                            </p>
+                            <div class="articles__meta">
+                                <div class="articles__date">Oct 26</div>
+                                <a href="#!" class="articles__comments">
+                                    <img src="./img/articles/icons/comment.svg" alt="comments">101
+                                </a>
+                                <a href="#!" class="articles__likes">
+                                    <img src="./img/articles/icons/heart.svg" alt="heart">432
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Aside -->
+                <aside class="articles-side">
+                    <div class="articles-side__category">
+                        <h4>
+                            Recommended for you
+                        </h4>
+                    </div>
+                    <div class="articles-side__list">
+
+                        <!-- Item-01 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/01.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">Office Meetings Leave the Office</h5>
+                                <div class="articles-side__time">15 minuts ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                1
+                            </p>
+                        </div>
+
+                        <!-- Item-02 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/02.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">Experimental Vocal Music in Brooklyn</h5>
+                                <div class="articles-side__time">32 minuts ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                2
+                            </p>
+                        </div>
+
+                        <!-- Item-03 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/03.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">Google’s Influence Over Think Tanks</h5>
+                                <div class="articles-side__time">38 minuts ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                3
+                            </p>
+                        </div>
+
+                        <!-- Item-04 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/04.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">Homes for Sale in NYC and Connecticut</h5>
+                                <div class="articles-side__time">53 minuts ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                4
+                            </p>
+                        </div>
+
+                        <!-- Item-05 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/05.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">Are You There, Dad? It’s Me, Alice</h5>
+                                <div class="articles-side__time">1 hour ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                5
+                            </p>
+                        </div>
+
+                        <!-- Item-06 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/06.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">The New Punk Look: Lacy and Colorful</h5>
+                                <div class="articles-side__time">1 hour ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                6
+                            </p>
+                        </div>
+
+
+                        <!-- Item-07 -->
+                        <div class="articles-side__item">
+                            <a href="#!">
+                                <img src="./img/articles/sidebar/07.jpg" alt="" class="articles-side__img">
+                            </a>
+                            <a href="#!" class="articles-side__info">
+                                <h5 class="articles-side__title">Sunday Best in Harlem and Brooklyn</h5>
+                                <div class="articles-side__time">2 hours ago</div>
+                            </a>
+                            <p class="articles-aside__counts">
+                                7
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#!" class="articles-side__readmore">
+                        Read more
+                    </a>
+                </aside>
+                <!-- Aside end -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot-news -->
+    <section class="hot-news">
+        <div class="container">
+            <div class="hot-news__grid grid">
+
+                <!-- Hot-card--large -->
+                <article class="hot-card hot-card--large">
+                    <div class="hot-card__btn-hot">
+                        <a href="#!">Hot</a>
+                    </div>
+                    <div class="hot-card__author">
+                        <a href="#!" class="hot-card__avatar">
+                            <img src="./img/hot-news/author.jpg" srcset="./img/hot-news/author@2x.jpg 2x">
+                            </img>
+                        </a>
+                        <a href="#!" class="hot-card__author-name">By Sarah Jenkins</a>
+                        <p class="hot-card__author-role">Photographer</p>
+                    </div>
+                    <a href="#!">
+                        <h4 class="hot-card__title">Readers' Choice winners: Your wine country favorites</h4>
+                    </a>
+                    <a href="#!" class="hot-card__btn">
+                        <img src="./img/icons/photos.svg" alt="photos-icon">Watch photos
+                        <span class="hot-card__btn-count">26</span>
+                    </a>
+                    <div class="hot-card__pagination">
+                        <div class="hot-card__pagination-dot"></div>
+                        <div class="hot-card__pagination-dot active"></div>
+                        <div class="hot-card__pagination-dot"></div>
+                        <div class="hot-card__pagination-dot"></div>
+                        <div class="hot-card__pagination-dot"></div>
+                    </div>
+                </article>
+
+                <!-- Hot-card--medium -->
+                <article class="hot-card hot-card--medium">
+                    <div class="hot-card__info">
+                        <a href="#!" class="hot-card__category">Careers</a>
+                        <a href="#!">
+                            <h4 class="hot-card__title">
+                                Had a Job Interview but No Callback? Here’s What to Do
+                            </h4>
+                        </a>
+
+                        <p class="hot-card__text">Try to understand the culture of the company where you want to work
+                            and
+                            be authentic in your interview, experts emphasize
+                        </p>
+                        <a href="#" class="hot-card__btn btn">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="hot-card__img">
+                        <img src="./img/hot-news/02.png" srcset="./img/hot-news/02@2x.png 2x" alt="woman">
+                    </div>
+                </article>
+
+                <!-- Hot-card--small -->
+                <article class="hot-card hot-card--small">
+                    <a href="#!" class="hot-card__title">
+                        <h4>Is Coffee Bad for Bones?</h4>
+                    </a>
+                    <p class="hot-card__text">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken
+                        bones</p>
+                    <span class="hot-card__date">Oct 15</span>
+                </article>
+
+                <!-- Hot-card--small-2 -->
+                <article class="hot-card hot-card--small">
+                    <a href="#!" class="hot-card__title">
+                        <h4>What We Manufacture</h4>
+                    </a>
+                    <p class="hot-card__text">A global history of the factory and the modern world that all should read
+                    </p>
+                    <span class="hot-card__date">Oct 14</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__title">
+                <h4>Subscribe now and get 20% off</h4>
+            </div>
+            <form class="footer__form">
+                <input type="text" class="footer__subscribe-field" placeholder="Enter your email">
+                <button class="footer__subscribe-btn">Subscribe</button>
+            </form>
+            <div class="footer__links grid">
+                <div class="footer__links-col footer__links-col--red">
+                    <h5 class="footer__link-category">News</h5>
+                    <a href="#!" class="footer__link">Nation</a>
+                    <a href="#!" class="footer__link">World</a>
+                    <a href="#!" class="footer__link">Politics</a>
+                    <a href="#!" class="footer__link">Solar Eclipse</a>
+                </div>
+                <div class="footer__links-col footer__links-col--purple">
+                    <h5 class="footer__link-category">Arts</h5>
+                    <a href="#!" class="footer__link">Art & Design</a>
+                    <a href="#!" class="footer__link">Movies</a>
+                    <a href="#!" class="footer__link">People</a>
+                    <a href="#!" class="footer__link">Video: Arts</a>
+                    <a href="#!" class="footer__link">Theater</a>
+                </div>
+                <div class="footer__links-col footer__links-col--blue">
+                    <h5 class="footer__link-category">Travel</h5>
+                    <a href="#!" class="footer__link">Destinations</a>
+                    <a href="#!" class="footer__link">Flights</a>
+                    <a href="#!" class="footer__link">Business Travel</a>
+                </div>
+                <div class="footer__links-col footer__links-col--orange">
+                    <h5 class="footer__link-category">Sports</h5>
+                    <a href="#!" class="footer__link">Olympics</a>
+                    <a href="#!" class="footer__link">Motor Sports</a>
+                    <a href="#!" class="footer__link">Volleyball</a>
+                    <a href="#!" class="footer__link">MMA</a>
+                    <a href="#!" class="footer__link">Cycling</a>
+                </div>
+                <div class="footer__links-col footer__links-col--green">
+                    <h5 class="footer__link-category">Tech</h5>
+                    <a href="#!" class="footer__link">Tech</a>
+                    <a href="#!" class="footer__link">Tech Columnists</a>
+                    <a href="#!" class="footer__link">Tech Reviews</a>
+                    <a href="#!" class="footer__link">Talking Tech</a>
+                </div>
+                <div class="footer__links-col footer__links-col--grey">
+                    <h5 class="footer__link-category">Moneys</h5>
+                    <a href="#!" class="footer__link">Markets</a>
+                    <a href="#!" class="footer__link">Business</a>
+                    <a href="#!" class="footer__link">Personal Finance</a>
+                    <a href="#!" class="footer__link">Retirement</a>
+                    <a href="#!" class="footer__link">Careers</a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <div class="footer__logo">
+                    <img src="./img/footer/logo.svg" alt="logo">
+                </div>
+
+                <ul class="footer__nav-links">
+                    <li>
+                        <a href="#!" class="footer__nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer__nav-link">
+                            Work with Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer__nav-link">
+                            Advertise
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer__nav-link">
+                            Your Ad Choise
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer__social-media">
+                    <a href="#!">
+                        <img src="./img/footer/social/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#!">
+                        <img src="./img/footer/social/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#!">
+                        <img src="./img/footer/social/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#!">
+                        <img src="./img/footer/social/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom grid">
+                <p class="footer__text">Universal’s business concept is to offer fashion and quality at the best price
+                    in a sustainable way. Universal has since it was founded in 2015 grown into one of the world's
+                    leading fashion companies. </p>
+                <p class="footer__copyright">© 2019 Universal UI Kit</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

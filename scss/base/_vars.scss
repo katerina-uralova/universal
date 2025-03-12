@@ -1,0 +1,66 @@
+:root {
+
+
+// Fonts
+        --main-font: "Lato", sans-serif;
+        --second-font: "Roboto Slab", sans-serif;
+      
+
+
+
+
+
+
+}
+// Mixins
+@mixin mediaBg(){ 
+        @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){    
+            @content    
+               }    
+    } ;
+    // Media
+@mixin tablet() {
+
+        @media(max-width: 1189px) {
+
+                @content
+
+        }
+
+};
+@mixin tabletXS() {
+
+        @media(max-width: 1024px) {
+
+                @content
+
+        }
+
+};
+@mixin mobile() {
+
+        @media(max-width: 768px) {
+
+                @content
+
+        }
+
+};
+@mixin mobileXS() {
+
+        @media(max-width: 600px) {
+
+                @content
+
+        }
+
+};
+@mixin mobileS() {
+
+        @media(max-width: 480px) {
+
+                @content
+
+        }
+
+};
